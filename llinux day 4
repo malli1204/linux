@@ -1,0 +1,39 @@
+	Ø Vim editor --> visually improved
+	Ø Vim is a kind of editor
+	Ø Its having 3 modes
+		○ Escape mode
+		○ Command/colon mode
+		○ Insert mode
+	Ø All the commands in vim editor is written in linux commands page
+	
+	
+LINUX ADMINISTRATION:
+	Ø User management
+	Ø CRUD --> create read update delete
+	Ø useradd <user  name> --> creates user
+	Ø id <user-name> -->displays the user info
+	Ø Group --> list of similar members
+	Ø Create devops group, add team members to the group
+	Ø In linux when you create user, by default group also will be created with the same name
+	Ø There are 2 types of groups one is primary and other is secondary group
+	Ø Every user should have 1 primary group and atleast 1 secondary group
+
+	Ø groupadd <group name> --> will creates group
+	Ø usermod -g <group name> --> wll adds the primary group to the user
+	Ø usermod -aG <group name> --> will adds the secondary group to the user
+	Ø Note : while deleting a user first we need to delete primary, secondary groups and home directory  
+	Ø gpasswd -d <user> <group name> --> will delete the user from the group
+	Ø Then after that move the user primary group using usermod -g<group name> to his home group (primary group should be there before deleting the user so that’s why we are adding user to his own group)
+	Ø After that delete the user using userdel <username>
+
+
+	Ø After getting credentials how user will login
+	Ø After creating user first we need to set the password using passwd <username> 
+	Ø But he cant login with key 
+	Ø By default in linux we cant login with password
+	Ø So we need to change the configurations
+	Ø For that we need to go to vim /etc/ssh/sshd_config
+	Ø So in that we need to change the password authentication from no to yes  
+	Ø If we do any wrong changes in config there might be a  chance of deletion of all users credentials
+	Ø So for that we need to run a rest using sshd -t
+	Ø Then after that we need to restart the server using systemctl restart sshd
