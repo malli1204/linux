@@ -1,0 +1,58 @@
+	Ø What is computer--> all the IP enabled services are computers(laptop == mobile == server == chip == tv ==> computer)
+	Ø Server --> host the applications
+	Ø Difference b/w server and client
+		○ Lawyer is a server and we are the clients
+	Ø https://www.joindevops.com
+		○ Protocol: https
+		○ Port: 443
+		○ IP: DNS IP
+		○ Username and password --> authentication
+	Ø Linux server :
+		○ SSH --> Secure shell
+		○ Port : 22
+		○ IP, Username, password/private key
+	Ø Firewall--> checks Inbound and outbound traffic
+	Ø Authentication :
+		○ What you know-->Password, Username
+		○ What you have  -->Token, Authenticator , rsa token
+		○ What you are     -->finger print, face ID, Retina
+	Ø Server == box == node
+		○ Lock == public(which is visible to every one)
+		○ Key == private (which is with only one)
+	Ø key pairs --> public key and private key
+	Ø Flow of connecting a server
+		1. create key pair
+		2. create firewall
+		3. import public key to aws account
+		4. create server and attach public key
+		5. attach firewall to server
+	Ø Git Bash --> Mini Linux in windows
+	SSH client
+	Ø browser --> http/https client
+	Ø Linux Server --> SSH Server
+	
+	Ø git bash == putty == super putty == mobaxterm == mac terminal = windows cmd
+	Ø User Directory
+		○ C:\Users\siva --> windows format
+		○ /c/Users/siva --> linux format
+	
+	Ø windows --> not case sensitive Siva == siva == Siva
+	Linux --> case sensitive --> Siva != siva no space in linux
+		○ /c/devops/daws-84s == C:\devops\daws-84s
+		○ ssh-keygen -f <file-name>
+		
+		○ ssh-keygen -f joindevops
+
+	Ø For connecting the server to AWS account : 
+
+	Ø After creating AWS account region should be US east -1
+	Ø For creating firewall
+		○ EC2--> security groups --> create security group -->changes as per requirement
+	Ø For Creating Key pairs 
+		○ EC2 --> Key pairs(if you don’t have create ) or else --> import key pair(already public key created in directory)
+	Ø For launching the instances
+		○ EC2 --> Instances --> launch instances --> add all the requirements
+	Ø Then after that copy the Public key 
+	Ø Using the command ssh -I <private key> ec2-user@public IP
+		○ EX : ssh -i joindevops ec2-user@44.201.47.56
+	Ø Finally server is connected
