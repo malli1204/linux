@@ -1,0 +1,11 @@
+	Ø Full path --> Starts with '/'
+	Ø Relative path --> starts with direct file name
+	
+	Ø $ --> normal user    (if you want to change to admin user use "sudo su ")
+	Ø # --> admin user 
+	Ø If we give sudo su -   --> it will launch the directory
+	Ø Command syntax --> command <options> <inputs>
+	Ø '/' is the root directory in linux
+	Ø C drive is the root user in windows
+	Ø '>' --> it usually redirects 
+Added commands in commands page
