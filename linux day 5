@@ -1,0 +1,60 @@
+	Ø Permissions
+		○ R(read) --> 4
+		○ W(write)--> 2
+		○ X(execute)--> 1
+	
+	Ø - / d 	rw-	r--	r--
+	File / directory	User/owner(u)	Group owner(g)	Others(0)
+
+	Ø ec2-user 	ec2-user
+	User	Group
+	
+	Ø chmod ugo+w devops.txt -->it will give the write access to users(u),group(g) and others(o) in devops file
+	Ø chmod u-w devops.txt --> it will remove the write access to the user
+	Ø chmod 700 devops.txt --> it will give rwx access to the user (4+2+1)
+	
+	Ø Only root/owner user can change the permissions
+
+	Ø chown <user>:<group> devops.txt --> it will change the ownership to the user
+	Ø File ownership can only be modified by root user
+	Ø /etc/ssh/sshd_config --> password authentication yes
+
+	Ø There are 65,536 ports 
+	Ø Ports is nothing but in an apartment there are different flats, flat number are like ports
+
+
+	Ø Giving access to the new user
+		○ Create user
+		○ User can send his public key to admin user
+		○ /home/user (home folder for user) admin creates .ssh file in /home/user folder
+		○ User will be the only user to that folder… 700 is the max permission
+		○ Inside .ssh file create a authorized_keys file with max access of 600
+		○ Admin will add the public key in this file
+		○ Now user can login using ssh -I <key> ec2-user@IP
+		
+	Ø /etc/sudoers --> you can do changes to provide root access (or) add user to the wheel group without password
+	
+Package management  :
+
+	Ø Package manager connects to the internet windows website. Downloads them and install them
+	Ø Apt -get (previous used)
+	Ø Yum/dnf
+	Ø dnf install <package name> --> will install the package
+	Ø dnf remove <package name> -->will delete the package
+	Ø /etc/yum.repos.d --> will have the repositories which will install the packages
+	
+	
+Service management :
+
+	Ø systemctl start <service-name> --> it will start the service
+	Ø systemctl status <service-name> --> it will show the status of the service
+	Ø systemctl stop <service-name> --> it will stop the service
+	Ø systemctl enable <service-name> --> it will enables the service when you restart the system automatically
+	Ø systemctl disable <service-name> --> it will disable the service which automatically enables
+
+	Ø In browser if we give http://44.222.173.233 --> it will shows the welcome page of services
+
+		○ Port --> http -->80
+		○ Protocal --> ://
+		○ Ip --> 44.222.173.233
+		○ Username password
