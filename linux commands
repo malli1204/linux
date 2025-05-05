@@ -1,0 +1,61 @@
+	pwd 	present working directory
+	ssh-keygen -f <file-name> 	for generating keys in directory.
+	ssh -i <private key > ec2user@publicIP 	 For connecting server
+	cd	 change directory
+	cd .. 	one step back
+	ls 	list subdirectories
+	ls -l	Long listing format in alphabetical order
+	ls -lr	Long listing format in reverse alphabetical order
+	ls -ltr	Sorting with time(latest on top)
+	ls -ltrh	Human readable(kb,mb)
+	ls -la	Shows the hidden files and folders
+	touch < input>	Creates the empty file (Ex for input: devops.txt)
+	cat ><filename>	Type text and give ctrl+d will over writes the previous text
+	cat >><filename>	Type text and give ctrl+d will appends to the previous text
+	cat <filename>	Will reads the text
+	mkdir	Creates the directory
+	rmdir	Removes the empty directory
+	rm -f <filename>	Forcefully removes the file
+	rm -rf <filename>	Recursively forcefully files and folders inside too
+	cp <source> <destination>	Copies the files into required location
+	mv <source> <destination>	Cut and paste
+	wget <URL>	Downloads the file from the web
+	Curl <URL>	Shows the file in linux environment
+	cat <filename> | grep <word to search>
+(OR)  
+grep <word to search > <file>	First command before pipe shows the file and that will be the
+output for next command and it will search the required word
+	echo <URL>	Will displays the url 
+	echo<URL> | cut -d <seperator> -f<range> 	Will cuts the file or URL into fragments by using seperator and show
+the range in the -f command
+	cp /etc/passwd users	Will copy all the users in linux
+	awk -F "<seperator>" '{print $nF}' <filename>	Will seperates the files using the seperator and prints the required number of fragments we gave
+	cat <filename> | head -n	Will gives n number of lines in file
+	 cat <filename> | tail -nf	Will give the n number of lines from bottom
+	tail -f <log-file>	Will gives the lines which will be added at the end latest log files
+	find <where to find> -name "<name to search>"	Will finds the word in the given file name
+	find . -name "<name to search>"	Will finds the word in the current directory
+		
+
+VIM command mode 
+1 	:q	Quits the file
+2 	:wq	Writes and quits the file
+3	:wq!	Forcedly writes and quits the file
+4	: q!	Forcedly quits without saving
+5	:/<word to search>	Search the word from top
+6	:?<word to search>	Search the word from bottom
+7	:noh	No highlight
+8	: 27 d	Deletes the 27th line
+9	:%d	Deletes the entire lines in file
+10	:3s/sbin/SBIN	Replaces the sbin in 3rd line with SBIN
+11	:3s/sbin/SBIN/g	Will replaces all the sbin words with SBIN in the same line
+12 	:%s/sbin/SBIN/g	Will replaces all the sbin words with SBIN in the entire file
+
+VIM ESC mode commands
+1	u	Undo 
+2	yy	Copy the line where you are
+3	10yy	Copies the 10th line
+4	p	Pastes the line
+5	dd	Cuts the line
+6	gg	Takes to the top of the line
+7	Shift+g	Takes to the bottom of the line
