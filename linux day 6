@@ -1,0 +1,64 @@
+PROCESS MANAGEMENT :
+
+	Ø You should have admin access to do process management
+	Ø Hierarchy of team 
+		○ TEAM MANAGER --> TEAM LEAD --> TEAM MEMBER --> SENIOR EMP --> JUNIOR EMP --> FRESHER
+	Ø This whole hierarchy is called PROCESS
+	Ø ps --> it shows which process is running in the terminal
+	Ø Whenever you run ps or any command Linux will automatically assign process ID(PID) and it will follow the process and gives the output
+	Ø PID --> process instance ID
+	Ø PPID --> parent process instance ID
+	Ø ps -ef | grep <process-name> --> to check whether the process is running or not
+	Ø There are 2 types of processes.
+		○ Foreground process --> once if we do this process we cannot do any other thing
+		○ Background process --> which will run in background
+	Ø '&' at the end of the command is added to run the process in the background
+	Ø kill <PID> --> request to terminate (or) to kill the process
+	Ø Kill -9 <PID> -->order the terminate
+	Ø top --> will show the CPU, memory of that application
+	Ø htop --> human readable 
+	Ø top -p PID --> check the resources used by particular process
+	
+NETWORK MANAGEMENT :
+
+	Ø Netstat -lntp --> How do you check for ports in linux
+	
+	Ø systemctl status <service-name>
+	ps -ef | grep service-name
+	netstat -lntp
+	top -p PID
+	Ø  above 4 commands will be more helpful
+
+3-TIER ARCHITECTURE:
+
+	Three-tier architecture is a client-server architecture that separates an application into three logical and physical layers:
+	
+	1. Presentation Tier (Client Layer)
+	
+	Purpose: User interaction interface.
+	Technologies: HTML, CSS, JavaScript, React, Angular, mobile apps, etc.
+	Responsibilities:
+	Displays data to the user.
+	Sends user requests to the middle layer.
+	Does not handle business logic or data access directly.
+	
+	2. Application Tier (Logic Layer / Middle Tier)
+	
+	Purpose: Handles business logic and processes user requests.
+	Technologies: Node.js, Java, .NET, Python (Django, Flask), Ruby on Rails.
+	Responsibilities:
+	Processes data sent from the presentation layer.
+	Applies business rules.
+	Communicates with the data layer.
+	Returns processed data to the presentation layer.
+	
+	3. Data Tier (Database Layer)
+	
+	Purpose: Stores, retrieves, and manages data.
+	Technologies: MySQL, PostgreSQL, MongoDB, Oracle DB, SQL Server, NoSQL
+	Responsibilities:
+	Executes queries received from the application layer.
+	Provides data integrity and security.
+	Manages data transactions.
+	
+	Presentation layer will be accessed by the client and both application and data tier will run in the background
