@@ -1,0 +1,45 @@
+What is DevOps?
+	Ø DevOps is the process of building deploying and testing the code written on the same day we can achieve it by continuous integration , continuous deployment , continuous delivery and continuous testing
+	
+	Ø SDLC : software development life cycle.
+		○ Requirement analysis.
+		○ Planning.
+		○ Design --> general requirements to technical requirements
+		○ Implementation
+		○ Deployment
+		○ Testing
+		○ Maintenance
+	Ø SMS : school management system.
+		○ Gurukuls(50 years ago): (water fall methodology)
+			▪ Pass percentage is 30-40 % due to year end exams
+		○ Stake holders:
+			▪ Parents  :  serious (they only pay fee)
+			▪ Students  :  Not serious(they will study in year end)
+			▪ Teachers  :  Not serious (they have time to complete the syllabus)
+		○ Model schools(20 years ago): (agile methodology)
+			▪ Pass percentage is 80-90% because they introduced unit tests and quarterly and half yearly exams
+		○ Stake holders:
+			▪ Parents  :  serious (they only pay fee)
+			▪ Students  :  Not serious(they will study before exams)
+			▪ Teachers  :  serious (they have to complete the syllabus in time)
+		○ Present schools: (Devops methodology)
+			▪ Pass percentage is 95 - 99% because they introduced slip tests, daily tests, weekly tests
+		○ Stake holders:
+			▪ Parents  :  serious (they only pay fee)
+			▪ Students  :  serious(they need to study every day)
+			▪ Teachers  :  serious (they have to complete the syllabus in time)
+
+	Ø Waterfall : 
+		○ Once requirements are fixed we can't change them.
+		○ Will take 2 years for project to go for production.
+	Ø Agile :
+		○ Final product is divided into multiple modules.
+			▪ Ex : login and sign up
+				Orders
+				Menu….etc
+		○ Will have certain deadlines to complete the module within that time both development and  testing need to complete(if 1 month is the time 15 days is for development and 15 days is for testing).
+	Ø Devops :
+		○ Whatever the code developers writes in the day will be deployed and tested on the same day
+	Note : Environments - DEV,QA, SIT,UAT,PERF,PREPROD,PROD
+	
+
